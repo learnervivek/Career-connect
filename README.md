@@ -133,22 +133,22 @@ VITE_BACKEND_URL=http://localhost:4000
 
 ```bash
 # backend (from backend/)
-A full-stack MERN job portal where employers post roles and job seekers apply, track applications, and manage submissions.
+npm install   # or yarn install
 
 # frontend (from frontend/)
-
-## Features
+cd frontend
+npm install   # or yarn install
 ```
 
 ## Running Locally
 
 ```bash
 # start backend (from backend/)
-- Job search with title/category/location filters
+npm run dev   # or yarn dev
 
 # start frontend (from frontend/)
-- Rich job descriptions with company details
-- Employer dashboard: post, edit, delete jobs; view applicants
+cd frontend
+npm run dev   # or yarn dev
 ```
 
 Frontend runs on Vite (default 5173+); backend on 4000.
@@ -185,120 +185,6 @@ Frontend runs on Vite (default 5173+); backend on 4000.
 - Set env vars on the server (Mongo, Cloudinary, JWT, FRONTEND_URL)
 - Build frontend with `npm run build` then serve `dist`
 - Serve backend over HTTPS; set secure cookies in production
-
-## License
-
-MIT
-
-- Job seeker dashboard: apply with resume upload (Cloudinary), view submissions
-- Auth with JWT cookies; role-based access (Employer, Job Seeker)
-- Responsive UI with modern styling
-
-## Tech Stack
-
-- Frontend: React (Vite), React Router, Axios, React Icons
-- Backend: Node.js, Express, Mongoose
-- Database: MongoDB
-- File Storage: Cloudinary for resumes
-- Auth: JWT with httpOnly cookies
-
-## Project Structure
-
-- backend/ — Express server, routes, controllers, models, middlewares
-- frontend/ — React app (Vite), pages, components, styles
-
-## Prerequisites
-
-- Node.js 18+
-- MongoDB instance
-- Cloudinary account (cloud name, API key/secret)
-
-## Envi# Career Connect
-
-A full-stack MERN job portal where employersntA full-stack ME/.
-
-## Features
-
-- Job search with title/category/location filters
-- Rich job descriptions with company details
-- Employer da=<y- Job sudina- Rich job descriptions with company details
-- E>
-- Employer dashboard: post, edit, delete joet- Job seeker dashboard: apply with resume upload (Cloudinary)``- Auth with JWT cookies; role-based access (Employer, Job Seeker)
-- Responsive (- Responsive UI with modern styling
-
-## Tech Stack
-
-- Frontenfrom f
-
-## Tech Stack
-
-- Frontend: React ( #- Frontend: ta- Backend: Node.js, Express, Mongoose
-- Database: MongoDBba- Database: MongoDB
-- File Storage:
-  #- File Storage: Clro- Auth: JWT with httpOnly cookies
-
-##
-
-## Project Structure
-
-- backend/on - backend/ — Expr);- frontend/ — React app (Vite), pages, components, styles
-
-## Prereqte
-
-## Prerequisites
-
-- Node.js 18+
-- MongoDB instance
-- Cloudets- Node.js 18- GET- MongoDB inr/- Cloudinary accont
-
-## Envi# Career Connect
-
-A full-stack MERN job pploA full-stack MERN job /g## Featuresist jobs
-
-- GET /api/v1/job/:id — job details
-- PUT /api/v1/job/- Rich job descriptions with company details
-- EET- Employer da=<y- Job sudina- Rich job descpl- E>
-- Employer dashboard: post, edit, delete joet- Job seeker dashboar S- Eer- Responsive (- Responsive UI with modern styling
-
-## Tech Stack
-
-- Frontenfrom f
-
-## Tech Stack
-
-- Frontend: React ( #- Frontend: ta- Backend: Node.js, Express, Mongoose
-- D B
-
-## Tech Stack
-
-- Frontenfrom f
-
-## Tech Stack
-
-- FFro- Frontenfroru## Tech Stack
-  or- Frontend:
-  #- Database: MongoDBba- Database: MongoDB
-- File Storage:
-  #- File Storagjo- File Storage:
-  #- File Storage: Clro-Se#- File Storagebs
-
-##
-
-## Project Structure
-
-- backend/on - backend/ ? r## ir- backend/on - backe/
-
-## Prereqte
-
-## Prerequisites
-
-- Node.js 18+
-- MongoDB instance
-- Cloudetsployment Notes
-- Set e## Prerequ t- Node.js 18+
-  go,- MongoDB in J- Cloudets-D_URL)
-  -## Envi# Career Connect
-  A full-stack MERN job pploA full-strvA full-st over HTTPS; se- GET /a cookies in production
 
 ## License
 
