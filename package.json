@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Job Portal - Full Stack Application",
   "scripts": {
-    "install:frontend": "npm --prefix ./frontend install",
+    "install:frontend": "npm --prefix ./frontend install --legacy-peer-deps",
     "install:backend": "npm --prefix ./backend install",
-    "build": "bash build.sh",
+    "build": "npm --prefix ./frontend install --legacy-peer-deps && npm --prefix ./frontend install --save-dev terser && npm --prefix ./frontend run build && cp -r frontend/dist ./dist",
     "dev": "npm --prefix ./backend start"
   },
   "keywords": [],

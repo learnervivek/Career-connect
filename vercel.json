@@ -1,5 +1,6 @@
 {
-  "buildCommand": "bash build.sh",
+  "installCommand": "npm install --legacy-peer-deps && npm --prefix ./frontend install --save-dev terser",
+  "buildCommand": "npm --prefix ./frontend run build && cp -r frontend/dist ./dist",
   "outputDirectory": "dist",
   "rewrites": [
     {
