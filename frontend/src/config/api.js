@@ -1,5 +1,9 @@
 // API Base URL configuration
-export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+// In production (Vercel), use empty string for same-domain API calls
+// In development, use localhost:4000
+export const API_BASE_URL = import.meta.env.VITE_API_URL !== undefined 
+  ? import.meta.env.VITE_API_URL 
+  : (import.meta.env.MODE === 'production' ? '' : 'http://localhost:4000');
 
 export const API_ENDPOINTS = {
   // User endpoints
