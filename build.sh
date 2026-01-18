@@ -1,5 +1,5 @@
-#!/bin/bash
-# Vercel build script
+#!/usr/bin/env bash
+set -e
 
 echo "Installing frontend dependencies..."
 cd frontend
@@ -14,3 +14,4 @@ rm -rf dist
 cp -r frontend/dist ./dist
 
 echo "Build complete!"
+ls -la dist/
