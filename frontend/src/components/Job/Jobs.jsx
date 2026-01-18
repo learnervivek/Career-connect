@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { Context } from "../../main";
 import { FaBriefcase, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import { API_ENDPOINTS } from "../../config/api";
 
 const Jobs = () => {
   const [jobs, setJobs] = useState([]);
@@ -24,7 +25,7 @@ const Jobs = () => {
   useEffect(() => {
     try {
       axios
-        .get("http://localhost:4000/api/v1/job/getall", {
+        .get(API_ENDPOINTS.getAllJobs, {
           withCredentials: true,
         })
         .then((res) => {

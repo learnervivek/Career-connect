@@ -6,6 +6,7 @@ import { Context } from "../../main";
 import { FaBriefcase } from "react-icons/fa";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
+import { API_ENDPOINTS } from "../../config/api";
 
 const PostJob = () => {
   const [title, setTitle] = useState("");
@@ -36,7 +37,7 @@ const PostJob = () => {
     }
     await axios
       .post(
-        "http://localhost:4000/api/v1/job/post",
+        API_ENDPOINTS.postJob,
         fixedSalary.length >= 4
           ? {
             title,

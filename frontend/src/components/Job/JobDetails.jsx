@@ -6,6 +6,7 @@ import { Context } from "../../main";
 import { FaBriefcase, FaMapMarkerAlt, FaClock, FaFileAlt, FaCalendar, FaDollarSign, FaTrash, FaEdit } from "react-icons/fa";
 import toast from "react-hot-toast";
 import { formatDate } from "../../utils/formatDate";
+import { API_ENDPOINTS } from "../../config/api";
 
 const JobDetails = () => {
   const { id } = useParams();
@@ -17,7 +18,7 @@ const JobDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/api/v1/job/${id}`, {
+      .get(API_ENDPOINTS.getJob(id), {
         withCredentials: true,
       })
       .then((res) => {
@@ -32,7 +33,7 @@ const JobDetails = () => {
     if (window.confirm("Are you sure you want to delete this job? This action cannot be undone.")) {
       setLoading(true);
       try {
-        await axios.delete(`http://localhost:4000/api/v1/job/delete/${id}`, {
+        await axios.delete(API_ENDPOINTS.deleteJob(id), {
           withCredentials: true,
         });
         toast.success("Job deleted successfully");
