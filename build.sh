@@ -3,10 +3,13 @@ set -e
 
 echo "Installing frontend dependencies..."
 cd frontend
-npm install
+npm install --legacy-peer-deps
+
+echo "Installing build tools..."
+npm install --save-dev terser
 
 echo "Building frontend..."
-npm run build
+npx vite build
 
 echo "Moving build output to root..."
 cd ..
