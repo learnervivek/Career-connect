@@ -7,21 +7,30 @@ After deployment, you **MUST** configure these environment variables in your Ver
 ### Steps:
 1. Go to your Vercel project dashboard
 2. Navigate to **Settings** → **Environment Variables**
-3. Add the following variable:
+3. Add ALL the following variables:
 
-#### Frontend Environment Variable:
-- `VITE_API_URL` - Leave empty (will use same domain) or set to your custom API URL
+#### Required Environment Variables:
 
-#### Backend Environment Variables (if using separate backend):
-- `MONGODB_URI` - Your MongoDB connection string
-- `JWT_SECRET_KEY` - Your JWT secret
+**Database:**
+- `DB_URL` - Your MongoDB connection string (e.g., mongodb+srv://user:pass@cluster.mongodb.net/)
+
+**JWT Configuration:**
+- `JWT_SECRET_KEY` - Strong secret key for JWT (generate a random string)
 - `JWT_EXPIRE` - JWT expiration time (e.g., "7d")
 - `COOKIE_EXPIRE` - Cookie expiration in days (e.g., 7)
+
+**Cloudinary Configuration:**
 - `CLOUDINARY_CLOUD_NAME` - Your Cloudinary cloud name
 - `CLOUDINARY_API_KEY` - Your Cloudinary API key
 - `CLOUDINARY_API_SECRET` - Your Cloudinary API secret
-- `FRONTEND_URL` - Your Vercel frontend URL (e.g., https://your-app.vercel.app)
+
+**Application Settings:**
+- `FRONTEND_URL` - Your Vercel app URL (e.g., https://career-connect-ebon-beta.vercel.app)
 - `NODE_ENV` - Set to "production"
+- `PORT` - Set to 4000 (optional for Vercel)
+
+**Frontend (Optional):**
+- `VITE_API_URL` - Leave empty/unset for same-domain API calls
 
 ### After Adding Environment Variables:
 1. Redeploy your application from the Vercel dashboard
