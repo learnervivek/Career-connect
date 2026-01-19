@@ -1,6 +1,0 @@
-# Don't ignore anything - let Vercel handle it
-# Remove this file or keep it minimal
-.git
-.gitignore
-.eslintcache
-*.log
